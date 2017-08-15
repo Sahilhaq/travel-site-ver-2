@@ -1,0 +1,56 @@
+.large-hero {
+    position: relative;
+    border-bottom: 10px solid $mainBlue;
+    
+    &__image {
+        display: block;
+    }
+    
+    &__text-content {
+        text-align: center;
+        width: 100%; 
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+     
+    &__title {
+        color: $mainBlue;
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin: 0;
+        
+        @mixin atSmall {
+            font-size: 4.6rem;
+        }
+    }
+    
+    &__subtitle {
+        margin: 0;
+        color: $mainBlue;
+        font-size: 1.6rem;
+        font-weight: 200;
+        margin-bottom: 15px;
+        
+        @mixin atSmall {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__description {
+        color: #fff;
+        margin: 0 auto;    
+        max-width: 300px;
+        font-weight: 100;
+        font-size: 1.1rem;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 35px;   
+        
+        @mixin atSmall {
+            max-width: 500px;
+            font-size: 1.8rem;   
+        }
+    }
+}
