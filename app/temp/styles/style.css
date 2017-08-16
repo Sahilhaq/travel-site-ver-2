@@ -465,6 +465,11 @@ img {
             box-sizing: border-box;
 }
 
+a {
+    font-weight: 500;
+    color: #d59541;
+}
+
 .wrapper {
     max-width: 1236px;
     padding-left: 18px;
@@ -472,6 +477,27 @@ img {
     overflow: hidden; 
     margin: 0 auto;
 }
+
+.wrapper .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+.wrapper--medium {
+        max-width: 976px;
+        
+    }
+
+.wrapper--b-margin {
+            margin-bottom: 1rem;
+    }
+
+@media (min-width: 800px){
+
+.wrapper--b-margin {
+            margin-bottom: 3.5rem
+    }
+    }
 
 .large-hero {
     position: relative;
@@ -511,7 +537,7 @@ img {
         margin: 0;
         color: #2f5572;
         font-size: 1.6rem;
-        font-weight: 200;
+        font-weight: 300;
         margin-bottom: 15px;
     }
 
@@ -630,3 +656,117 @@ img {
         color: #fff;
         font-weight: 200;
     }
+
+.page-section {
+    padding: 30px 0;
+}
+
+@media (min-width: 800px){
+
+.page-section {
+        padding: 50px 0
+}
+    }
+
+.headline {
+    color: #2f5572;
+    font-weight: 200;
+}
+
+.headline--centered {
+        text-align: center;
+    }
+
+.headline--large {
+        font-size: 2rem;
+    }
+
+@media (min-width: 800px){
+
+.headline--large { 
+            font-size: 3rem
+    }
+    }
+
+.headline--b-margin-large {
+        margin-bottom: 2rem;
+    }
+
+@media (min-width: 800px){
+
+.headline--b-margin-large {
+            margin-bottom: 2.8rem
+    }
+    }
+
+.headline--b-margin-small {
+        margin-bottom: 1.4rem;
+    }
+
+@media (min-width: 800px){
+
+.headline--b-margin-small {
+            margin-bottom: 1.8rem
+    }
+    }
+
+.headline--small {
+        font-size: 1.2rem;
+    }
+
+@media (min-width: 800px){
+
+.headline--small {
+            font-size: 1.8rem
+    }
+    }
+
+.headline--orange {
+        color: #d59541;
+    }
+
+.headline--narrow {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.headline--bold {
+        font-weight: 300;
+    }
+
+.row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.row--gutters {
+        margin-right: -46px;
+    }
+
+.row--gutters > div {
+        margin-right: 46px;
+    }
+
+@media (min-width: 800px){
+        .row__medium-4 {
+            float: left;
+            width: 33.33%;
+        }
+
+        .row__medium-8 {
+            float: left;
+            width: 66.66%;
+        }
+    }
+
+.generic-text-container p {
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+.generic-text-container p atSmall {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
