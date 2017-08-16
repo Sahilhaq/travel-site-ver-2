@@ -465,6 +465,14 @@ img {
             box-sizing: border-box;
 }
 
+.wrapper {
+    max-width: 1236px;
+    padding-left: 18px;
+    padding-right: 18px;
+    overflow: hidden; 
+    margin: 0 auto;
+}
+
 .large-hero {
     position: relative;
     border-bottom: 10px solid #2f5572;
@@ -489,6 +497,7 @@ img {
         font-size: 2.5rem;
         font-weight: 300;
         margin: 0;
+        margin-top: 50px;
     }
 
 @media (min-width: 530px){
@@ -536,7 +545,8 @@ img {
     text-decoration: none;
     background: #2f5572;
     color: #fff;
-    padding: 10px 18px;
+    padding: .75rem 1.2rem;
+    display:    inline-block;
 }
 
 .btn--orange {
@@ -550,7 +560,73 @@ img {
 @media (min-width: 530px){
 
 .btn--large {
-                padding: 14px 21px;
+                padding: 12px 21px;
                 font-size: 1.2rem
     }
+    }
+
+.site-header {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: rgba(47,85,114, .3);
+}
+
+.site-header__logo {
+        background: #2f5572;
+        padding: 25px 35px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%) scale(.8);
+                transform: translateX(-50%) scale(.8);
+        -webkit-transform-origin: 50% 0;
+                transform-origin: 50% 0;
+    }
+
+@media (min-width: 800px){
+
+.site-header__logo {
+            left: auto;
+            float: left;
+            -webkit-transform: translateX(0) scale(1);
+                    transform: translateX(0) scale(1)
+    }
+    }
+
+.site-header__btn-container {
+        float: right;
+        text-align: center;
+        margin: 12px 0;
+    }
+
+.site-header__menu-content {
+        display: none;
+    }
+
+@media (min-width: 800px){
+
+.site-header__menu-content {
+            display: block
+    }
+    }
+
+.primary-nav {
+    float: right;
+}
+
+.primary-nav ul {
+        list-style: none;
+        padding: 10px 0;
+    }
+
+.primary-nav li {
+        float: left;
+        margin-right: 25px;
+    }
+
+.primary-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 200;
     }

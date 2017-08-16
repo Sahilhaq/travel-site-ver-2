@@ -1,0 +1,19 @@
+.primary-nav {
+    float: right;
+    
+    ul {
+        list-style: none;
+        padding: 10px 0;
+    }
+    
+    li {
+        float: left;
+        margin-right: 25px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 200;
+    }
+}
