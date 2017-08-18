@@ -1,11 +1,11 @@
 .generic-text-container {
     p {
         font-weight: 300;
-        line-height: 1.5;
+        line-height: 1.4;
         
         @mixin atSmall {
             font-size: 1.1rem;
-            line-height: 1.6;
+            line-height: 1.5;
         }
     }
 }

@@ -5,6 +5,7 @@
     &__title {
         font-size: 1.6rem;
         font-weight: 300;
+        margin-bottom: 10px;
         
         @mixin atMedium {
             font-size: 2rem;

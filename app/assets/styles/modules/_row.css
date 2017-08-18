@@ -10,6 +10,14 @@
         margin-right: -46px;
     }
     
+    &--gutters-small {
+        margin-right: -45px;
+    }
+    
+    &--gutters-small > div {
+        padding-right: 45px;
+    }
+    
     &--gutters > div {
         margin-right: 46px;
     }
@@ -33,6 +41,26 @@
             float: left;
             width: 66.66%;
         }    
+        
+        &--t-padding {
+            padding-top: 80px;
+        }
+        
+        &--b-padding {
+            padding-bottom: 50px;
+        }
+    }
+    
+    
+    &--equal-height-at-large {
+        @mixin atLarge {
+            display: flex;
+        }
+        
+        & > div {
+            float: left;
+            display: flex;
+        }
     }
     
 }
