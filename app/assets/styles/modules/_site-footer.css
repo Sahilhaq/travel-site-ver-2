@@ -1,0 +1,9 @@
+.site-footer {
+    background: $mainBlue;
+    
+    &__text {
+        text-align: center;
+        color: #fff;
+        font-weight: 200;
+    }
+}

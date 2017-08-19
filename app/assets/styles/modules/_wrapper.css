@@ -21,4 +21,15 @@
             margin-bottom: 3.5rem;
         }
     }
+    
+    &--no-padding-until-large {
+        padding-left: 0;
+        padding-right: 0;
+        
+        @mixn atLarge {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+        
+    }
 } 

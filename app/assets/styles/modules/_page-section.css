@@ -14,5 +14,9 @@
     &__testimonials {
         background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
         background-size: cover;
+        padding-bottom: 0;
+        @mixin atMedium {
+            padding-bottom: 50px;
+        }
     }
 } 

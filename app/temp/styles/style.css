@@ -499,6 +499,17 @@ a {
     }
     }
 
+.wrapper--no-padding-until-large {
+        padding-left: 0;
+        padding-right: 0;
+        
+        @mixn atLarge {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+        
+    }
+
 .large-hero {
     position: relative;
     border-bottom: 10px solid #2f5572;
@@ -573,6 +584,7 @@ a {
     color: #fff;
     padding: .75rem 1.2rem;
     display:    inline-block;
+    font-weight: 200;
 }
 
 .btn--orange {
@@ -677,6 +689,14 @@ a {
 .page-section__testimonials {
         background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
         background-size: cover;
+        padding-bottom: 0;
+    }
+
+@media (min-width: 800px){
+
+.page-section__testimonials {
+            padding-bottom: 50px
+    }
     }
 
 .headline {
@@ -748,6 +768,29 @@ a {
         margin-right: auto;
     }
 
+.row--t-padding {
+        padding-top: 80px;
+    }
+
+.row--b-padding {
+        padding-bottom: 0;    
+        
+        @mxin atLarge {          
+           padding-bottom: 50px;
+        }
+    }
+
+.row--t-padding-until-large {
+        padding-top: 100px;
+    }
+
+@media (min-width: 1200px){
+
+.row--t-padding-until-large {
+            padding-top: 0
+    }
+    }
+
 .row::after{
         content: "";
         clear: both;
@@ -792,14 +835,13 @@ a {
         .row__medium-8 {
             float: left;
             width: 66.66%;
-        }    
-        
-        .row--t-padding {
-            padding-top: 80px;
         }
-        
-        .row--b-padding {
-            padding-bottom: 50px;
+    }
+
+@media (min-width: 1200px){
+        .row__large-4 {
+            float: left;
+            width: 33.33;
         }
     }
 
@@ -809,6 +851,7 @@ a {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex
+        
     }
     }
 
@@ -921,4 +964,14 @@ a {
         text-align: center;
         font-size: .90rem;
         color: #d59541;
+    }
+
+.site-footer {
+    background: #2f5572;
+}
+
+.site-footer__text {
+        text-align: center;
+        color: #fff;
+        font-weight: 200;
     }

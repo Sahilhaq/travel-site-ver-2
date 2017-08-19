@@ -1,4 +1,23 @@
 .row {
+    &--t-padding {
+        padding-top: 80px;
+    }
+
+    &--b-padding {
+        padding-bottom: 0;    
+        
+        @mxin atLarge {          
+           padding-bottom: 50px;
+        }
+    }
+    
+    &--t-padding-until-large {
+        padding-top: 100px;
+    
+        @mixin atLarge {
+            padding-top: 0;
+        }
+    }
     
     @mixin clearfix;
     
@@ -42,12 +61,12 @@
             width: 66.66%;
         }    
         
-        &--t-padding {
-            padding-top: 80px;
-        }
-        
-        &--b-padding {
-            padding-bottom: 50px;
+    }
+    
+    @mixin atLarge {
+        &__large-4 {
+            float: left;
+            width: 33.33;
         }
     }
     
@@ -61,6 +80,7 @@
             float: left;
             display: flex;
         }
+        
     }
     
 }
