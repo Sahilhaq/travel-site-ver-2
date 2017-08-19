@@ -65,20 +65,33 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-//var Person = require('./modules/Person');
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_Person__ = __webpack_require__(1);
 
+
+var Emily = new __WEBPACK_IMPORTED_MODULE_0__modules_Person__["a" /* default */]('Emily kit');
+Emily.greet();
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 class Person {
-    constructor(name){
+    constructor(name) {
         this.name = name;
+    }
+    
+    greet(){
+        console.log(`hi there my name is ${this.name}.`);
     }
 }
 
-
-var Emily = new  Person('Emily Washington');
-
-console.log(Emily.name);
+/* harmony default export */ __webpack_exports__["a"] = (Person);
 
 /***/ })
 /******/ ]);
