@@ -2,7 +2,16 @@
     width: 100%;
     position: absolute;
     z-index: 2;
-    background: rgba($mainBlue, .3);
+    transition: background-color .3s ease-out;
+    
+    &--is-expended {
+        background-color: rgba($mainBlue, .3);
+    }
+    
+    @mixin atMedium {
+        background-color: rgba($mainBlue, .3);
+    }
+    
     
     &__logo {
         background: $mainBlue;
@@ -22,17 +31,88 @@
     }
     
     &__btn-container {
-        float: right;
-        text-align: center;
-        margin: 12px 0;
+        
+        @mixin atMedium {
+            float: right;
+            margin: 12px 0;
+        }
     }
     
     &__menu-content {
-        display: none;
+        opacity: 0;
+        z-index: -10;
+        transform: scale(1.2);
+        padding-top: 100px;
+        text-align: center;
+        transition: all .3s ease-out;
         
         @mixin atMedium {
-            display: block;
+            opacity: 1;
+            z-index: 1;
+            padding-top: 0;
+            transform: scale(1);
+        }
+        
+        &--is-visible {
+            opacity: 1;
+            z-index: 1;
+            transform: scale(1);
+        }
+         
+    }
+    
+    
+    &__menu-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 19px;
+        display: block;
+        z-index: 10;
+        
+        @mixin atMedium {
+            display: none;
+        }
+        
+        &::before {
+            content: '';
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+        }
+        
+        &__middle {
+            background: #fff;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+        }
+        
+        &::after {
+            content: '';
+            background: #fff;
+            position: absolute;
+            top: 19px;
+            left: 0;
+            width: 20px;
+            height: 3px;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
  

@@ -1,4 +1,3 @@
-import Person from './modules/Person';
+import MobileMenu from './modules/_MobileMenu';
 
-var Emily = new Person('Emily kit');
-Emily.greet();
+var mobileMenu = new MobileMenu();

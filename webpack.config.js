@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: '.app/assets/scripts/App.js',
+    entry: './app/assets/scripts/App.js',
     output: {
         path: path.join(__dirname, './app/temp/scripts'),
         filename: 'App.js'
@@ -9,9 +9,9 @@ module.exports = {
     module: {
         loaders: [
             {
-                loader: 'babel',
+                loader: 'babel-loader',
                 query: {
-                    preset: ['es2015']
+                    presets: ['es2015']
                 },
                 test: /\.js$/,
                 exclude: /node_modules/

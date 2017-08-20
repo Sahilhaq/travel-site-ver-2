@@ -1,5 +1,10 @@
 .primary-nav {
-    float: right;
+    @mixin atMedium {
+        float: right;
+    }
+    
+    
+    
     
     ul {
         list-style: none;
@@ -7,13 +12,37 @@
     }
     
     li {
-        float: left;
-        margin-right: 25px;
+        margin-right: 7px;
+        display: inline-block;
+        
+        @mixin atMedium {
+            margin-right: 20px;
+            display: block;
+            float: right;
+
+        }
+    }
+    
+    li:last-child {
+        margin-right: 0;
+        
+        @mixin atMedium {
+            margin-right: 20px;
+        }
     }
     
     a {
         text-decoration: none;
         color: #fff;
         font-weight: 200;
+        background: rgba($mainBlue, .70);
+        padding: 5px 10px;
+        font-size: .87rem;
+        
+        @mixin atMedium {
+            background: transparent;
+            padding: 0;
+            font-size: 1rem;
+        }
     }
 }
