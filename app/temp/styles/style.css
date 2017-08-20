@@ -483,6 +483,10 @@ a {
         padding-right: 0;
     }
 
+.wrapper--narrow {
+        max-width: 500px;
+    }
+
 .wrapper--medium {
         max-width: 976px;
         
@@ -1074,6 +1078,11 @@ a {
     }
     }
 
+.section-title--less-margin {
+        margin-top: 0;
+        margin-bottom: 1.2rem;
+    }
+
 .section-title--blue {
         color: #2f5572;
     }
@@ -1173,3 +1182,105 @@ a {
         -webkit-transform: scale(1);
                 transform: scale(1);
     }
+
+.modal {
+    z-index: 10;
+    background: rgba(255, 255, 255, .85);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    
+}
+
+.modal--is-visible {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+.modal__inner {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+
+.modal__description {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.65;
+        margin-top: 0;
+    }
+
+@media (min-width: 800px){
+
+.modal__description {
+            margin-top: 1.2rem;
+            font-size: 1.2rem
+    }
+    }
+
+.modal__close {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        font-size: 2rem;
+        -webkit-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+        color: #2f5572;
+        cursor: pointer;
+        -webkit-transition: color .2s ease-out;
+        transition: color .2s ease-out;
+    }
+
+.modal__close:hover {
+            color: #d59541;
+        }
+
+.social-icon {
+        margin-top: 20px;
+        text-align: center;
+        
+        
+        
+    }
+
+@media (min-width: 800px){
+
+.social-icon {
+            margin-top: 30px
+        
+        
+        
+    }
+    }
+
+.social-icon__icon {
+            width: 70px;
+            height: 60px;
+            background: #d59541;
+            text-align: center;
+            display: inline-block;
+        }
+
+@media (min-width: 800px){
+
+.social-icon__icon {
+                margin-right: 1.2rem;
+                padding-left: 8px
+        }
+    }
+
+.social-icon__icon:last-child {
+                margin: 0;
+            }
