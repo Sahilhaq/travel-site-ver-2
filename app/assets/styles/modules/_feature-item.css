@@ -1,6 +1,7 @@
 .feature-item {
     padding-left: 94px;
     position: relative;
+    padding-bottom: 40px;
     
     &__title {
         font-size: 1.6rem;

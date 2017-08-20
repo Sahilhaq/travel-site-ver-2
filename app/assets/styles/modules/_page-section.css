@@ -12,7 +12,7 @@
     }
     
     &__testimonials {
-        background: #9ac2d4;
+        background: #c2dbe6;
         padding-bottom: 0;
         @mixin atMedium {
             padding-bottom: 50px;

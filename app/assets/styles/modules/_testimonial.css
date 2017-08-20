@@ -1,6 +1,10 @@
 .testimonial {
-    background: rgba(255, 255, 255, .85);
-    padding: 0 1.875rem 1px 1.875rem;
+    background: rgba(255, 255, 255, .75);
+    padding: 0 1.4rem 1px 1.4rem;
+    
+    @mixin atMedium {
+        padding: 0 1.875rem 1px 1.875rem;
+    }
     
     &__photo {
         overflow: hidden;
