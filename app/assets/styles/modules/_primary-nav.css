@@ -5,7 +5,6 @@
     
     
     
-    
     ul {
         list-style: none;
         padding: 10px 0;
@@ -43,6 +42,11 @@
             background: transparent;
             padding: 0;
             font-size: 1rem;
+            
+            &.is-current-link {
+                color: #ebba69;
+            }
         }
+        
     }
 }

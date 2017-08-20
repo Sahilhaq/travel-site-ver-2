@@ -10,7 +10,18 @@
     
     @mixin atMedium {
         background-color: rgba($mainBlue, .3);
+        position: fixed;
+        
+        &--dark {
+            background: rgba(30, 58, 87, 0.88);
+            
+            .site-header__logo {
+                transform: scale(.58);
+            }
+        }
     }
+    
+    
     
     
     &__logo {
@@ -21,6 +32,7 @@
         left: 50%;
         transform: translateX(-50%) scale(.8);
         transform-origin: 50% 0;
+        transition: scale .3s ease-out;
         
         @mixin atMedium {
             left: auto;
