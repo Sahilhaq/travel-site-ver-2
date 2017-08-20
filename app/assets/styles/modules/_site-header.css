@@ -83,6 +83,8 @@
             left: 0;
             width: 20px;
             height: 3px;
+            transform-origin: 0 50%;
+            transition: all .3s ease-out;
         }
         
         &__middle {
@@ -92,6 +94,8 @@
             left: 0;
             width: 20px;
             height: 3px;
+            transform-origin: 0 50%;
+            transition: all .3s ease-out;
         }
         
         &::after {
@@ -102,6 +106,25 @@
             left: 0;
             width: 20px;
             height: 3px;
+            transform-origin: 0 0;
+            transition: all .3s ease-out;
+        }
+    }
+    
+    &__menu-icon--close-x {
+        &::before {
+            transform: rotate(45deg);
+            width: 25px;
+        }
+        
+        .site-header__menu-icon__middle {
+            transform: scaleX(0);
+            opacity: -1;
+        }
+        
+        &::after {
+            transform: rotate(-45deg) translateY(-1px);
+            width: 25px;
         }
     }
 }
