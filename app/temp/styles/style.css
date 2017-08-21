@@ -866,7 +866,7 @@ a {
     }
             
             .page-section__testimonials.lazyloaded {
-                background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
+                background: url(assets/images/testimonials-bg.jpg) top center no-repeat;
                 background-size: cover;
             }
     }
